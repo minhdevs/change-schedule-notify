@@ -44,11 +44,11 @@ const checkTool = (res) => {
                 data.includes("Thay đổi lịch học") &&
                 !data.includes("Sinh viên đăng ký đổi lịch học bắt đầu từ ngày")
             ) {
-                res && res.send("Da mo tool doi lich hoc");
+                res && res.send("<h1  style='color: green; text-align: center'>Đã mở tool đổi lịch học!</h1>");
                 // console.log(first)
                 bot && bot.sendMessage(937478699, "Đã mở tool đổi lịch học rồi đại ca ơiiiiiiiiiiiii!");
             } else {
-                res && res.send("Chua mo tool doi lich hoc");
+                res && res.send("<h1  style='color: red; text-align: center'>Chưa mở tool đổi lịch học đâu cu!</h1>");
             }
         })
         .catch((err) => {
